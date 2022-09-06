@@ -4,12 +4,12 @@ money = int(input('Please input initial amount of money for the deposit calculat
 
 print('\nmoney =', money)
 
-s = [money * per_cent['ТКБ'] / 100,
+list_per_cent = [money * per_cent['ТКБ'] / 100,
      money * per_cent['СКБ'] / 100,
      money * per_cent['ВТБ'] / 100,
      money * per_cent['СБЕР'] / 100
      ]
 
-print('\ndeposit =', list(map(round, s)))
+print('\ndeposit =', list(map(round, list_per_cent)))
 
-print('\nThe maximum amount you can earn -', round(max(s)))
+print('\nThe maximum amount you can earn -', round(max(list_per_cent)))
